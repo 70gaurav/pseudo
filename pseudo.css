@@ -1,69 +1,81 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-.wrapper{
+
+.wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
 }
-.box img{
+
+.box img {
     width: 100px;
     height: 100px;
     margin-top: 20px;
 }
-.box{
+
+.box {
     text-align: center;
-    border: 1px solid rgb(175, 175, 249) ;
+    border: 1px solid rgb(175, 175, 249);
     margin: 0 60px;
-    width: 40%;
-    height: 400px;
+    width: 30%;
+    height: 500px;
     border-radius: 30px;
     background-color: rgb(175, 175, 249);
     position: relative;
     overflow: hidden;
-
 }
-.star ul{
+
+.paragraph p {
+    margin: 25px;
+}
+
+.star ul {
     display: flex;
     justify-content: center;
     list-style: none;
     margin: 20px;
 }
-.star i{
+
+.star i {
     color: gold;
     margin: 0 5px;
 
 }
-.quote i{
-    font-size: 70px;
+
+.quote i {
+    font-size: 100px;
 }
-.quote{
-    height: 100px;
-    width: 100px;
+
+.quote {
+    height: 150px;
+    width: 150px;
     background-color: blue;
     border-radius: 50%;
     position: absolute;
     display: flex;
     align-items: center;
     justify-content: center;
-    right: -7px;
-    top: -20px;
+    right: -25px;
+    top: -30px;
 
 }
-.box::before{
+
+.box::before {
     content: "";
     position: absolute;
     width: 100%;
     height: 100vh;
     top: 100%;
     left: 0;
-    background-color: rgba(0,0,0,0.5);
-    transition: all  ease;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: all ease;
 }
-.box:hover::before{
+
+.box:hover::before {
     top: 0;
     transition-duration: 1s;
 }
